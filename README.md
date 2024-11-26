@@ -2,7 +2,36 @@
 
 > `Throttle API` API limit self-monitoring library.
 
-## Usage example
+## Getting Started
+
+Download the `Throttle API` library:
+
+```shell
+go get github.com/NovikovRoman/throtapi
+```
+
+## Config
+
+```go
+type Config struct {
+    PerSec   int // limit of requests per second
+    PerMin   int // limit of requests per minute
+    PerHour  int // limit of requests per hour
+    PerDay   int // limit of requests per day
+    PerMonth int // limit of requests per month
+}
+```
+
+Limit <1 is ignored.
+
+## Methods
+
+- `New(cfg throtapi.Config) *Throtapi`
+- `IsFree() bool` - returns true if the API limits are not reached.
+- `IsBusy() bool` - returns true if API limits are reached.
+- `Limits() map[timeUnit]TimeUnitParam` - returns the current API limits.
+
+## Usage Example
 
 ```go
 package main
