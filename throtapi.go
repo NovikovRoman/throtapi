@@ -35,8 +35,8 @@ type TimeUnitParam struct {
 }
 
 // New returns a new Throtapi instance.
-func New(cfg Config) (t *Throtapi) {
-	t = &Throtapi{
+func New(cfg Config) *Throtapi {
+	return &Throtapi{
 		limits: map[timeUnit]TimeUnitParam{
 			Second: {Limit: cfg.PerSec},
 			Minute: {Limit: cfg.PerMin},
@@ -45,7 +45,6 @@ func New(cfg Config) (t *Throtapi) {
 			Month:  {Limit: cfg.PerMonth},
 		},
 	}
-	return
 }
 
 // IsFree returns true if the API limits are not reached.
