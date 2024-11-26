@@ -26,7 +26,7 @@ Limit <1 is ignored.
 
 ## Methods
 
-- `New(cfg throtapi.Config) *Throtapi`
+- `New(cfg Config) *Throtapi`
 - `IsFree() bool` - returns true if the API limits are not reached.
 - `IsBusy() bool` - returns true if API limits are reached.
 - `Limits() map[timeUnit]TimeUnitParam` - returns the current API limits.
