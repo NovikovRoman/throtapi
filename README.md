@@ -1,5 +1,7 @@
 # ThrotAPI
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/NovikovRoman/throtapi)](https://goreportcard.com/report/github.com/NovikovRoman/throtapi)
+
 > `Throttle API` API limit self-monitoring library.
 
 ## Getting Started
@@ -82,4 +84,10 @@ func worker(ctx context.Context, tapi *throtapi.Throtapi) {
         }
     }
 }
+```
+
+## Tests
+
+```shell
+go test
 ```
