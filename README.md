@@ -1,8 +1,9 @@
 # ThrotAPI
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/NovikovRoman/throtapi)](https://goreportcard.com/report/github.com/NovikovRoman/throtapi)
-
 > `Throttle API` API limit self-monitoring library.
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/NovikovRoman/throtapi)](https://goreportcard.com/report/github.com/NovikovRoman/throtapi)
+[![Go](https://github.com/NovikovRoman/throtapi/actions/workflows/go.yml/badge.svg)](https://github.com/NovikovRoman/throtapi/actions/workflows/go.yml)
 
 ## Getting Started
 
